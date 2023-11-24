@@ -1,0 +1,6 @@
+# Ignore specific file.txt
+db.sqlite3
+# Ignore all .log files
+*.log
+# Ignore all venv files
+venv
