@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'bootstrap4',
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
