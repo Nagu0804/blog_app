@@ -43,8 +43,9 @@
 <b>The Secret_Key required for the execution and debugging of project is not removed from the project code. So you can use the project as your college mini-project or by using the project code you can build your own project.</b>
 
 <h2>Usage :</h2>
+
     cd blog_app
-    
+
     pip install -r requirements.txt
 
     python manage.py makemigrations
