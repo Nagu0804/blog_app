@@ -25,17 +25,11 @@
     
 <h2>Technologies Used:</h2>
 <ul>
+    <li>Docker and Docker-compose</li>
     <li>Python</li>
     <li>Django</li>
     <li>Bootstrap</li>
     <li>JavaScript</li>
-</ul>
-    
-<h2>Additional Python Modules Required:</h2>
-<ul>
-    <li>Django</li>
-    <li>django-crispy-forms</li>
-    <li>Pillow</li>
 </ul>
   
 <h2>Note :</h2>
@@ -46,15 +40,21 @@
 
     cd blog_app
 
-    pip install -r requirements.txt
+    docker build -t <app_name> .
 
-    python manage.py makemigrations
+    docker run -p 8000:8000 <app_name>
 
-    python manage.py migrate
+you need to migrate data inside the container,
 
-    python manage.py runserver
-    
-   In your web browser enter the address : http://localhost:8000 or http://127.0.0.1:8000/
+    docker exec -it CONTAINER_NAME_OR_ID /bin/bash
+
+Run, 
+
+    python3 manage.py makemigrations
+
+    python3 manage.py migrate
+
+ In your web browser enter the address : http://localhost:8000 or http://127.0.0.1:8000/ or http://0.0.0.0:8000/
 
 
 
