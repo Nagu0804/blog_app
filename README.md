@@ -55,8 +55,3 @@ Run,
     python3 manage.py migrate
 
  In your web browser enter the address : http://localhost:8000 or http://127.0.0.1:8000/ or http://0.0.0.0:8000/
-
-
-
-
-
